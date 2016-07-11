@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_CONTENT"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    android:padding="@dimen/content_padding" >
+
+    <TextView
+        android:id="@+id/text_app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="18dp"
+        android:layout_marginTop="18dp"
+        android:drawablePadding="12dp"
+        android:drawableTop="@drawable/ic_launcher"
+        android:textColor="@color/gray"
+        style="@style/text_18"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/layout_TABLE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/table_margin"
+        android:background="@color/table_background"
+        android:orientation="vertical"
+        android:padding="@dimen/table_padding" >
+
+        <RelativeLayout
+            android:id="@+id/layout_official_website"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/row_height"
+            android:background="@drawable/row_selector"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:paddingLeft="@dimen/row_padding_left"
+            android:paddingRight="@dimen/row_padding_right" >
+
+            <TextView
+                style="@style/text_black_18"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:duplicateParentState="true"
+                android:gravity="center_vertical"
+                android:text="@string/text_official_website"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:duplicateParentState="true"
+                android:gravity="center_vertical"
+                android:src="@drawable/go" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_rate_app"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/row_height"
+            android:layout_marginTop="@dimen/row_margin"
+            android:background="@drawable/row_selector"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:paddingLeft="@dimen/row_padding_left"
+            android:paddingRight="@dimen/row_padding_right" >
+
+            <TextView
+                style="@style/text_black_18"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:duplicateParentState="true"
+                android:gravity="center_vertical"
+                android:text="@string/text_rate_app"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:duplicateParentState="true"
+                android:gravity="center_vertical"
+                android:src="@drawable/go" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_help"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/row_height"
+            android:layout_marginTop="@dimen/row_margin"
+            android:background="@drawable/row_selector"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:paddingLeft="@dimen/row_padding_left"
+            android:paddingRight="@dimen/row_padding_right" >
+
+            <TextView
+                style="@style/text_black_18"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:duplicateParentState="true"
+                android:gravity="center_vertical"
+                android:text="@string/text_about_help"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:duplicateParentState="true"
+                android:gravity="center_vertical"
+                android:src="@drawable/go" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_feedback"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/row_height"
+            android:layout_marginBottom="@dimen/row_margin"
+            android:layout_marginTop="@dimen/row_margin"
+            android:background="@drawable/row_selector"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:paddingLeft="@dimen/row_padding_left"
+            android:paddingRight="@dimen/row_padding_right" >
+
+            <TextView
+                style="@style/text_black_18"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:duplicateParentState="true"
+                android:gravity="center_vertical"
+                android:text="@string/text_about_feedback"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:duplicateParentState="true"
+                android:gravity="center_vertical"
+                android:src="@drawable/go" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_update"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/row_height"
+            android:background="@drawable/row_selector"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:paddingLeft="@dimen/row_padding_left"
+            android:paddingRight="@dimen/row_padding_right" >
+
+            <TextView
+                style="@style/text_black_18"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:duplicateParentState="true"
+                android:gravity="center_vertical"
+                android:text="@string/text_about_update"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:duplicateParentState="true"
+                android:gravity="center_vertical"
+                android:src="@drawable/go" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.0" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:duplicateParentState="true"
+                android:gravity="center_horizontal"
+                android:text="@string/text_company"
+                android:textSize="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:duplicateParentState="true"
+                android:gravity="center_horizontal"
+                android:text="@string/text_copyright"
+                android:textSize="10dp" />
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>
