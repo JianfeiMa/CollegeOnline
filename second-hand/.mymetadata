@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="second-hand"
+  id="myeclipse.1388984757781"
+  context-root="/second-hand"
+  j2ee-spec="6.0"
+  archive="second-hand.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

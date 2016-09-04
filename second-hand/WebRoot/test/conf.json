@@ -1,0 +1,20 @@
+﻿{
+	"title": "摩卡知识问题移动版", 
+	//原服务器地址
+	"src_root": "http://qa.mochasoft.com.cn:8080", 
+	//"mobile_root": "http://192.168.180.110/root/svn/InjectHtml5/Server/mocha_qa",
+	//url匹配对照表数组
+	"pages": [
+		//原服务器地址url的正则表达式		
+		"{src_root}/$": {
+			//配置
+			"config": "{mobile_root}/list/conf.json"
+			//需要加载的文件路径
+			"path": "{mobile_root}/list/loadfiles.js"
+		},
+		"{src_root}/index\.php\?qa=\d+\&qa_1=.+": {
+			"path": "{mobile_root}/list/loadfiles.js"
+		}
+	]
+
+};
