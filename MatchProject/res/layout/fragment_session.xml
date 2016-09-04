@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/layout_CONTENT"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        android:orientation="vertical"
+        android:padding="@dimen/content_padding" >
+
+        <!--
+              <ListView
+                android:background="@color/bottom_bg"
+                android:id="@+id/lv_reviews"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:cacheColorHint="@android:color/transparent"
+                android:divider="@drawable/list_line"
+                android:dividerHeight="0.2px"
+                android:paddingLeft="@dimen/row_padding_left"
+                android:paddingRight="@dimen/row_padding_right"
+                android:scrollbars="none" />
+        -->
+
+        <LinearLayout
+            android:id="@+id/Layout_TABLE_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/table_margin"
+            android:background="@color/table_background"
+            android:padding="@dimen/table_padding" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_height"
+                android:background="@drawable/row_selector" >
+
+                <ImageView
+                    android:id="@+id/iv_forum_img"
+                    android:layout_width="55dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="@dimen/table_margin"
+                    android:src="@drawable/ic_launcher" />
+
+                <RelativeLayout
+                    android:id="@+id/lable"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/table_margin"
+                    android:layout_marginLeft="@dimen/row_padding_left"
+                    android:layout_toRightOf="@+id/iv_forum_img" >
+
+                    <TextView
+                        android:id="@+id/tv_forum_title"
+                        style="@style/text_black_18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="去哪考官方" />
+
+                    <TextView
+                        style="@style/text_14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="@dimen/row_padding_right"
+                        android:text="3月5日 13:35"
+                        android:textColor="@color/gray"/>
+                </RelativeLayout>
+
+                <TextView
+                    style="@style/text_14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/iv_forum_img"
+                    android:layout_alignLeft="@+id/lable"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="2014年的公务员考试马上开始报名，请那啥啥啥的" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/fragment_session_checkon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="考勤" />
+
+        <Button
+            android:id="@+id/fragment_sesion_trade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="二手交易" />
+
+    </LinearLayout>
+
+</LinearLayout>

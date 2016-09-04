@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RegistActivity" >
+
+    <EditText
+        android:id="@+id/register_phone"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:background="@drawable/login_text_shape"
+        android:layout_marginTop="5dp"
+        android:paddingLeft="10dp"
+        android:textSize="15sp"
+        android:hint="请输入手机号码" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/register_password"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:hint="请设置登录密码"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/login_text_shape"
+        android:paddingLeft="10dp"
+        android:textSize="15sp"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/register_scondpassword"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:hint="请再次输入登录密码"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/login_text_shape"
+        android:paddingLeft="10dp"
+        android:textSize="15sp"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/register_btnRegist"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/selector_btn"
+        android:layout_gravity="center_horizontal"
+        android:text="完成注册" />
+
+</LinearLayout>
