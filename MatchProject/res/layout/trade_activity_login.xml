@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- <include layout="@layout/trade_activity_title" /> -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        
+
+            <team.yjcollege.matchproject.login.MyInputBox 
+                android:id="@+id/et_name"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:layout_gravity="center_horizontal"
+        		android:layout_marginTop="70dp"
+        		title="账  号:"/>
+            <!-- <EditText
+                android:id="@+id/et_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/trande_bg_input_bar"
+                android:hint="请输入用户名" > 
+            </EditText>-->
+        
+
+        
+
+            <team.yjcollege.matchproject.login.MyInputBox 
+                android:id="@+id/et_pwd"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:layout_gravity="center_horizontal"
+        		android:layout_marginTop="40dp"
+        		textMode="0x81"
+        		title="密  码:"/>
+            <!-- <EditText
+                android:id="@+id/et_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/trande_bg_input_bar"
+                android:hint="请输入您的登陆密码"
+                android:password="true" /> -->
+        
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal"
+            android:paddingTop="25dp" >
+
+            <Button
+                android:id="@+id/bt_registered"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/trade_btn_register_selector"
+                android:text="注册"
+                android:textColor="#ffffffff" />
+
+            <Button
+                android:id="@+id/bt_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/trade_btn_login_selector"
+                android:text="登陆"
+                android:textColor="#ffffffff" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_warn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text=""
+            android:textColor="#ffFF6600"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/trade_activity_login_freePassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button" />
+
+    </LinearLayout>
+
+</LinearLayout>

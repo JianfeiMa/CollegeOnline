@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="team.yjcollege.matchproject"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="17" />
+
+    <!-- internet -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- access_wifi_state -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- access_network_state -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- write_external_storage -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+    <!-- record_audio -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <!-- disable_keyguard -->
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" >
+    </uses-permission>
+    <!-- mount_unmount_filesystems -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- call_phone -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <!-- send_sms -->
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <application
+        android:name="team.yjcollege.matchproject.myapplication.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.White.NoTitleBar" >
+        <activity
+            android:name="team.yjcollege.matchproject.login.IsFirstIn"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 关于去哪考 -->
+        <activity
+            android:name="team.yjcollege.matchproject.ui.AboutActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="team.yjcollege.matchproject.login.GuidePageActivity"
+            android:label="@string/title_activity_guide_page" >
+        </activity>
+        <activity
+            android:name="team.yjcollege.matchproject.login.WelcomeActivity"
+            android:label="@string/title_activity_welcome" >
+        </activity>
+        <activity
+            android:name="team.yjcollege.matchproject.login.LoginActivity"
+            android:label="@string/title_activity_login" >
+        </activity>
+        <activity
+            android:name="team.yjcollege.matchproject.login.RegistActivity"
+            android:label="@string/title_activity_regist"
+            android:parentActivityName="team.yjcollege.matchproject.login.LoginActivity" >
+        </activity>
+        <activity
+            android:name="team.yjcollege.matchproject.login.ForgetPasswordActivity"
+            android:label="@string/title_activity_forget_password" >
+        </activity>
+        <activity
+            android:name="team.yjcollege.matchproject.login.ForgetPassword2Activity"
+            android:label="@string/title_activity_forget_password2" >
+        </activity>
+        <activity
+            android:name="team.yjcollege.matchproject.ui.MainActivity"
+            android:label="@string/title_activity_forget_password2" >
+        </activity>
+
+        <!-- 注册考勤activity -->
+        <activity android:name="team.yjcollege.matchproject.ui.SinvoiceActivity" >
+        </activity>
+        <activity android:name="com.example.move.activity.PersonnalActivity" />
+        <activity android:name="com.example.move.activity.LoginActivity" />
+        <activity android:name="com.example.move.activity.UserRegisterActivity" />
+        <activity android:name="com.example.move.activity.ReleaseActivity" />
+        <activity android:name="com.example.move.activity.MyReleaseActivity" />
+        <activity android:name="com.example.move.activity.ShopInfoActivity" />
+        <activity android:name="com.example.move.activity.PicturePreview" />
+        <activity android:name="com.example.move.activity.ShopListActivity" />
+        <activity android:name="com.example.move.activity.LeaveMessageActivity" />
+        <activity android:name="com.example.move.activity.MyMsgActivity" />
+        <activity android:name="com.example.move.activity.MyCollectionActivity" />
+        <activity android:name="com.example.move.activity.LookActivity" />
+        <activity android:name="com.example.move.activity.MyLookActivity" />
+        <activity android:name="com.example.move.activity.LookInfoActivity" />
+        <activity android:name="com.example.move.activity.LookListActivity" />
+        <activity android:name="com.example.move.activity.TradeMainActivity" />
+        <activity
+            android:name="team.yjcollege.matchproject.fourthfragment.PersonInfoActivity"
+            android:label="@string/title_activity_person_info" >
+        </activity>
+        <activity android:name="team.yjcollege.matchproject.ui.ModificationActivity"/>
+        <activity android:name="team.yjcollege.matchproject.thirfragment.Grallery3DActivity"/>
+        <activity android:name="team.yjcollege.matchproject.firstfragment.CollegeAuthorityWeb"/>
+        <service android:name="team.yjcollege.matchproject.server.GetMsgService"/>
+    </application>
+
+</manifest>
